@@ -1,4 +1,5 @@
 {
+    "keyboard_name": "Shuttle Cue Lite",
     "bootloader": "rp2040",
     "processor": "RP2040",
     "board": "GENERIC_RP_RP2040",
@@ -15,7 +16,7 @@
     "encoder": {
         "enabled": true,
         "rotary": [
-            {"pin_a": "GP3", "pin_b": "GP2"}
+            {"pin_a": "GP3", "pin_b": "GP2", "resolution": 2}
         ]
     },
     "layouts": {

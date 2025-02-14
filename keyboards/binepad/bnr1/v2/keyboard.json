@@ -1,4 +1,5 @@
 {
+    "keyboard_name": "BNR1 V2",
     "bootloader": "stm32duino",
     "processor": "STM32F103",
     "diode_direction": "COL2ROW",

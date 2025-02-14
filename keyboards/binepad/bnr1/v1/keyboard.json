@@ -1,4 +1,5 @@
 {
+    "keyboard_name": "BNR1",
     "bootloader": "atmel-dfu",
     "processor": "atmega32u4",
     "diode_direction": "COL2ROW",

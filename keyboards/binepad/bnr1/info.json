@@ -1,6 +1,5 @@
 {
     "manufacturer": "Binepad",
-    "keyboard_name": "BNR1",
     "maintainer": "Binpad",
     "features": {
         "bootmagic": true,

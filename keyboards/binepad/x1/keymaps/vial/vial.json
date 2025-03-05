@@ -1,0 +1,25 @@
+{
+    "vial": {
+        "midi": "advanced"
+    },
+    "lighting": "qmk_rgblight",
+    "matrix": {
+        "rows": 1,
+        "cols": 2
+    },
+    "customKeycodes": [
+	    {
+            "name": "Layer",
+        	"title": "Layer Selector",
+            "shortName": "X1_LAYER"
+    	}
+    ],
+    "layouts": {
+        "keymap": [
+            ["0,0\n\n\n\n\n\n\n\n\ne",{"x":2},"0,1\n\n\n\n\n\n\n\n\ne"],
+            [{"y":-0.25,"x":0.75,"w":2.5,"h":2.5},"0,1"],
+            [{"y":1.25},"0,0"],
+            [{"y":-0.5,"x":3.5,"a":7,"w":0.5,"h":0.5,"d":true},""]
+        ]
+    }
+}

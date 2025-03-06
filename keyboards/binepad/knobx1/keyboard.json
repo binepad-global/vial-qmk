@@ -3,7 +3,7 @@
     "keyboard_name": "knobX1",
     "maintainer": "binepad",
     "bootloader": "stm32duino",
-    "bootloader_instructions": "Hold down the small button on the side of the unit and plug in the keyboard.",
+    "bootloader_instructions": "Hold down the layer button (small button on the bottom left) and plug in the keyboard.",
     "diode_direction": "COL2ROW",
     "eeprom": {
         "wear_leveling": {

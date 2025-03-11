@@ -37,7 +37,11 @@
 #define IND3_LED A5
 #define IND4_LED A6
 
-enum x1_keycodes { X1_LAYER_SELECTOR = QK_KB_0 };
+// clang-format off
+enum x1_keycodes {
+    X1_LAYER_SELECTOR = QK_KB_0
+};
+// clang-format on
 
 #define X1_LAYER X1_LAYER_SELECTOR
 

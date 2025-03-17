@@ -14,10 +14,10 @@
  *    × ╢ PB0   PA0 ╟ ×
  *    × ╢ PB1   PA1 ╟ ×
  *    × ╢ PB2   PA2 ╟ ×
- *    × ╢ PB3   PA3 ╟ ind1
- *    × ╢ PB4   PA4 ╟ ind2
- *    × ╢ PB5   PA5 ╟ ind3
- *    × ╢ PB6   PA6 ╟ ind4
+ *    × ╢ PB3   PA3 ╟ ind4
+ *    × ╢ PB4   PA4 ╟ ind3
+ *    × ╢ PB5   PA5 ╟ ind2
+ *    × ╢ PB6   PA6 ╟ ind1
  *    × ╢ PB7   PA7 ╟ col0 -> sw-push
  * row0 ╢ PB8   PA8 ╟ ×
  *    × ╢ PB9   PA9 ╟ ×
@@ -32,14 +32,14 @@
 
 #define ROW0_PIN B8 // Building a 1x2 matrix makes no sense, setting the 1xCol to ground for direct pin access.
 
-#define IND1_LED A3
-#define IND2_LED A4
-#define IND3_LED A5
-#define IND4_LED A6
+#define IND1_LED A6
+#define IND2_LED A5
+#define IND3_LED A4
+#define IND4_LED A3
 
 // clang-format off
 enum x1_keycodes {
-    X1_LAYER_SELECTOR = QK_KB_0
+    X1_LAYER_SELECTOR = QK_KB_15
 };
 // clang-format on
 
@@ -61,8 +61,8 @@ static inline void x1_led_4_off(void) { gpio_write_pin_low(IND4_LED); }
 // clang-format on
 
 static inline void x1_layer_led(uint8_t lyr) {
-    gpio_write_pin(IND1_LED, lyr >= 1);
-    gpio_write_pin(IND1_LED, lyr >= 2);
-    gpio_write_pin(IND1_LED, lyr >= 3);
-    gpio_write_pin(IND1_LED, lyr >= 4);
+    gpio_write_pin(IND1_LED, lyr >= 0);
+    gpio_write_pin(IND2_LED, lyr >= 1);
+    gpio_write_pin(IND3_LED, lyr >= 2);
+    gpio_write_pin(IND4_LED, lyr >= 3);
 }

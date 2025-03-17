@@ -22,9 +22,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [3] = LAYOUT(
         _______, _______
-    ),
-    [4] = LAYOUT(
-        _______, _______
     )
 };
 // clang-format on
@@ -36,8 +33,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [1] = { ENCODER_CCW_CW(_______, _______) },
     [2] = { ENCODER_CCW_CW(_______, _______) },
-    [3] = { ENCODER_CCW_CW(_______, _______) },
-    [4] = { ENCODER_CCW_CW(_______, _______) }
+    [3] = { ENCODER_CCW_CW(_______, _______) }
 };
 // clang-format on
 

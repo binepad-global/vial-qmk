@@ -31,6 +31,9 @@
     },
     "processor": "STM32F103",
     "rgblight": {
+        "driver": "ws2812",
+        "led_count": 2,
+        "sleep": true,
         "animations": {
             "breathing": true,
             "rainbow_mood": true,
@@ -43,9 +46,12 @@
             "alternating": true,
             "twinkle": true
         },
-        "driver": "ws2812",
-        "led_count": 2,
-        "sleep": true
+        "default": {
+            "hue": 198,
+            "sat": 255,
+            "val": 204,
+            "speed": 2
+        }
     },
     "url": "https://binepad.com/products/knobx1",
     "usb": {

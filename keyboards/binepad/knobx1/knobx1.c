@@ -40,7 +40,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
         case X1_LAYER_SELECTOR:
             if (record->event.pressed) {
                 uint8_t current_layer = get_highest_layer(layer_state);
-                uint8_t next_layer    = (current_layer + 1) % 5; // Cycle through layers 0-4
+                uint8_t next_layer    = (current_layer + 1) % DYNAMIC_KEYMAP_LAYER_COUNT; // Cycle through layers 0-4
                 layer_move(next_layer);
                 x1_layer_led(next_layer); // Update LED indicators
             }

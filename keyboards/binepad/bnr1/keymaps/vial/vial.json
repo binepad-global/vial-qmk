@@ -1,6 +1,6 @@
 {
     "lighting": "none",
-    "matrix": { "rows": 1, "cols": 1 },
+    "matrix": {"rows": 1, "cols": 1},
     "layouts": {
         "keymap": [
             [{"x":1.25,"w":1.5,"h":1.5},"0,0"],

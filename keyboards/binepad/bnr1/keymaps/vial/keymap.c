@@ -3,26 +3,29 @@
 
 #include QMK_KEYBOARD_H
 
-enum {
-    _L0,
-    _L1
-} keyboard_layers;
+#ifndef VIAL_PROTOCOL_VERSION
+#    error "Hey! This is for Vial only! Stop it. Get some help."
+#endif
 
+// clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_L0] = LAYOUT_ortho_1x1(
-        LT(_L1, KC_MUTE)
+    [0] = LAYOUT_ortho_1x1(
+        LT(1, KC_SPC)
     ),
 
-    [_L1] = LAYOUT_ortho_1x1(
+    [1] = LAYOUT_ortho_1x1(
         _______
     )
 };
+// clang-format on
 
 #if defined(ENCODER_MAP_ENABLE)
 
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [_L0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
-    [_L1] = { ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP) }
+// clang-format off
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [0] = { ENCODER_CCW_CW(KC_DOWN, KC_UP) },
+    [1] = { ENCODER_CCW_CW(KC_RGHT, KC_LEFT) }
 };
+// clang-format on
 
 #endif

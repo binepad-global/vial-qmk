@@ -1,24 +1,21 @@
 {
-    "keyboard_name": "Shuttle Cue Lite",
+    "keyboard_name": "PRO1",
     "board": "GENERIC_RP_RP2040",
     "bootloader": "rp2040",
-    "bootloader_instructions": "Hold down the key at (0x0) in the matrix (the 'knob' / rotary encoder) and plug in the keyboard.",
-    "diode_direction": "COL2ROW",
     "encoder": {
-        "enabled": true,
         "rotary": [
             {"pin_a": "GP3", "pin_b": "GP2", "resolution": 2}
         ]
     },
+    "diode_direction": "COL2ROW",
     "matrix_pins": {
-        "direct": [
-            ["GP4"]
-        ]
+        "cols": ["GP4"],
+        "rows": ["GP1"]
     },
     "processor": "RP2040",
     "usb": {
         "device_version": "3.0.0",
-        "pid": "0x4241"
+        "pid": "0x4251"
     },
     "layouts": {
         "LAYOUT_ortho_1x1": {

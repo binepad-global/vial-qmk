@@ -9,3 +9,7 @@
 #define VIAL_UNLOCK_COMBO_COLS {0}
 
 #define MIDI_ADVANCED
+
+#define DOUBLE_TAP_KEY_COUNT 2
+
+#define TAPPING_TERM 250

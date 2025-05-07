@@ -19,9 +19,7 @@
         "bootmagic": true,
         "encoder": true,
         "extrakey": true,
-        "midi": true,
         "mousekey": true,
-        "nkro": false,
         "rgblight": true
     },
     "matrix_pins": {
@@ -31,27 +29,25 @@
     },
     "processor": "STM32F103",
     "rgblight": {
-        "driver": "ws2812",
-        "led_count": 2,
-        "sleep": true,
         "animations": {
+            "alternating": true,
             "breathing": true,
+            "christmas": true,
+            "gradient": true,
+            "knight": true,
             "rainbow_mood": true,
             "rainbow_swirl": true,
             "snake": true,
-            "knight": true,
-            "christmas": true,
-            "gradient": true,
-            "rgb_test": true,
-            "alternating": true,
             "twinkle": true
         },
         "default": {
             "hue": 198,
-            "sat": 255,
-            "val": 204,
-            "speed": 2
-        }
+            "speed": 2,
+            "val": 204
+        },
+        "driver": "ws2812",
+        "led_count": 2,
+        "sleep": true
     },
     "url": "https://binepad.com/products/knobx1",
     "usb": {

@@ -5,3 +5,5 @@ VIA_ENABLE = yes
 VIAL_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 MIDI_ENABLE = yes
+
+SRC += double_tap.c

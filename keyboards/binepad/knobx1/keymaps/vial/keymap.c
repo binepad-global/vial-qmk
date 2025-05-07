@@ -75,11 +75,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return process_double_tap(keycode, record);
 
         case X1_LAYU:
-            tap_code16(X1_LAYER_SELECTOR_UP);
+            process_x1_layer_up(record);
             return false;
 
         case X1_LAYD:
-            tap_code16(X1_LAYER_SELECTOR_DOWN);
+            process_x1_layer_down(record);
             return false;
     }
     return true; // Process all other keycodes normally

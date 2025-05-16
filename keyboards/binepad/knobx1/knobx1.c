@@ -45,7 +45,7 @@ bool process_x1_layer_up(keyrecord_t *record) {
         layer_move(next_layer);
         x1_layer_led(next_layer); // Update LED indicators
     }
-    return true;
+    return false;
 }
 
 bool process_x1_layer_down(keyrecord_t *record) {
@@ -56,7 +56,7 @@ bool process_x1_layer_down(keyrecord_t *record) {
         layer_move(prev_layer);
         x1_layer_led(prev_layer);
     }
-    return true;
+    return false;
 }
 
 bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
